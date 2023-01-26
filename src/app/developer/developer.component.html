@@ -1,1 +1,38 @@
-<p>developer works!</p>
+<form (ngSubmit)="addDev()">
+
+
+    <h4>Developper</h4>
+
+    <label for="lastnNme">lastnNme :</label>
+
+    <input id="lastnNme" type="string" name="lastnNme" [(ngModel)]="lastnNme">
+
+    <label for="firstName">firstName :</label>
+
+    <input id="firstName" type="number" name="firstName" [(ngModel)]="firstName">
+
+
+    <label for="age">age :</label>
+
+    <input id="age" type="number" name="age" [(ngModel)]="age">
+
+
+    <label for="gender">gender :</label>
+
+    <input id="gender" type="number" name="gender" [(ngModel)]="gender">
+
+
+    <label for="bio">bio :</label>
+
+    <input id="bio" type="bio" name="bio" [(ngModel)]="bio">
+
+    <app-skill [skill]=''></app-skill>
+    <div>
+
+        <button type="submit">envoyer 🍪</button>
+
+    </div>
+
+
+</form>
+
