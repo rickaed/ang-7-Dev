@@ -1,5 +1,5 @@
-import { Component, Input, OnInit, } from '@angular/core';
-import { Developer } from '../models/developer.model';
+import { Component, Input } from '@angular/core';
+
 import { Skill } from '../models/skill.model';
 
 @Component({
@@ -7,14 +7,7 @@ import { Skill } from '../models/skill.model';
   templateUrl: './skill.component.html',
   styleUrls: ['./skill.component.scss']
 })
-export class SkillComponent implements OnInit {
-  @Input() skills!: Skill[];
-
-
+export class SkillComponent {
   
-
-
-  ngOnInit() {
-    
-  }
+@Input() skill!:Skill;
 }
