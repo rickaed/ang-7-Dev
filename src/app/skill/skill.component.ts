@@ -1,5 +1,5 @@
 import { Component, Input } from '@angular/core';
-import { DeveloperComponent } from '../developer/developer.component';
+
 
 import { Skill } from '../models/skill.model';
 

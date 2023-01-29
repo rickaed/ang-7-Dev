@@ -1,4 +1,4 @@
-import { Component, OnInit, Input } from '@angular/core';
+import { Component} from '@angular/core';
 import { Developer } from "../models/developer.model";
 import { Skill } from '../models/skill.model';
 
@@ -8,7 +8,7 @@ import { Skill } from '../models/skill.model';
   styleUrls: ['./developer.component.scss']
 })
 
-export class DeveloperComponent implements OnInit {
+export class DeveloperComponent {
   js: Skill = {
     name: "JS",
     logo: "https://upload.wikimedia.org/wikipedia/commons/thumb/9/99/Unofficial_JavaScript_logo_2.svg/1024px-Unofficial_JavaScript_logo_2.svg.png",
@@ -41,12 +41,10 @@ export class DeveloperComponent implements OnInit {
     age: 35,
     gender: "male",
     bio: "dev depuis 10 ans, orienté fullstack",
-    skills: [this.js, this.css,this.python]
+    skills: [this.js, this.css,this.python]/*modifier ici les competence existante defini plus haut*/
   };
   devskills: Skill[] = this.dev.skills
 
   
-  ngOnInit() {
-
-  }
+  
 }
