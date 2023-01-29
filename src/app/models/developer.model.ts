@@ -6,5 +6,5 @@ export class Developer {
     age!: number;
     gender!: "male" | "female";
     bio!: string;
-    skill!: Skill[]
+    skills!: Skill[]
 }

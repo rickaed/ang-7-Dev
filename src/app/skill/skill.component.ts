@@ -9,6 +9,6 @@ import { Skill } from '../models/skill.model';
   styleUrls: ['./skill.component.scss']
 })
 export class SkillComponent {
-  
-@Input() devskill!:Skill
+  @Input() devskill!: Skill;
+ 
 }
