@@ -1,4 +1,5 @@
 import { Component, Input } from '@angular/core';
+import { DeveloperComponent } from '../developer/developer.component';
 
 import { Skill } from '../models/skill.model';
 
@@ -9,5 +10,5 @@ import { Skill } from '../models/skill.model';
 })
 export class SkillComponent {
   
-@Input() skill!:Skill;
+@Input() devskill!:Skill
 }

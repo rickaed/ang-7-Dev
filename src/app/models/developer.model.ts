@@ -1,15 +1,10 @@
 import { Skill } from "./skill.model";
 
 export class Developer {
-    constructor(
-        public lastName: string,
-        public firstName: string,
-        public age: number,
-        public gender: "male" | "female",
-        public bio: string,
-        public skill: Skill[]
-    ) {
-    }
-
-
+    lastName!: string;
+    firstName!: string;
+    age!: number;
+    gender!: "male" | "female";
+    bio!: string;
+    skill!: Skill[]
 }
