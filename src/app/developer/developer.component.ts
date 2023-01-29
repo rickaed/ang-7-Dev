@@ -43,7 +43,7 @@ export class DeveloperComponent {
     bio: "dev depuis 10 ans, orienté fullstack",
     skills: [this.js, this.css,this.python]/*modifier ici les competence existante defini plus haut*/
   };
-  devskills: Skill[] = this.dev.skills
+  devskills: Skill[] = this.dev.skills;
 
   
   
